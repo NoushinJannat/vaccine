@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+
+body {
+
+    color: #111;
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+}
+
+a {
+    color: #111;
+}
+
+.primary-color {
+    color: #2b3295;
+}
+
+/* Header */
+.header_section nav {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100px;
+    align-items: center;
+    padding: 0px 15px;
+}
+
+.header_section nav img {
+    width: 265px;
+}
+
+.navbar-nav.ml-auto {
+    display: block;
+}
+
+.header_section nav li {
+    display: inline-block;
+    margin-left: 30px;
+}
+
+/* Banner */
+.banner_section .row {
+    height: calc(100vh - 222px);
+    align-items: center;
+}
+
+.banner_section img {
+    width: 100%;
+}
+
+.banner_section h1 {
+    color: #111;
+}
+
+.banner_section p {
+    color: #333;
+    margin-top: 20px;
+}
+
+
+/*  Footer Section */
+.footer_sec .row {
+    border-top: 1px solid #f7f1f1;
+    padding-top: 33px;
+}
+
+/*RESPONSIVE*/
+
+/* -----  Tablet Landscape   -----*/
+@media only screen and (min-width: 992px) and (max-width: 1199px) {}
+
+/* -----  Tablet Portrait  -----*/
+@media (min-width: 768px) and (max-width: 991px) {
+    .banner_section h1 {
+        color: #111;
+        font-size: 30px !important;
+    }
+
+}
+
+/* -----  Phone  -----*/
+@media only screen and (max-width: 767px) {
+    .header_section nav {
+        flex-direction: column;
+    }
+
+    .header_section nav li {
+        margin: 0px 5px;
+    }
+
+    .header_section nav img {
+        width: 200px !important;
+    }
+
+    .banner_section {
+        margin-top: 20px;
+    }
+
+    .banner_section .row {
+        height: auto;
+        padding: 50px 0px 70px;
+    }
+
+    .footer_sec .flex-wrap {
+        justify-content: center !important;
+    }
+
+    .footer_sec .p-2 {
+        padding-bottom: 0px !important;
+    }
+
+    .login_wrapper,
+    .signup_wrapper {
+        padding-bottom: 100px;
+    }
+
+    .login_wrapper .row,
+    .signup_wrapper .row {
+        height: auto !important;
+    }
+
+}
+
+/* -----   Mobile Vertical Layout: 488px   -----*/
+@media only screen and (min-width: 388px) and (max-width: 767px) {
+    .header_section nav img {
+        width: 300px !important;
+    }
+
+    .header_section nav li {
+        margin: 0px 15px;
+    }
+}
